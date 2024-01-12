@@ -1,8 +1,10 @@
 import "@/styles/globals.css"
 import ActiveSectionContextProvider from "@/context/active-section-context"
 import Header from "@/components/header"
+import Footer from "@/components/footer"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { Toaster } from "react-hot-toast"
 
 // Icon font: Balgin
 // Website Font: Cormorant Garamond
@@ -20,6 +22,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <ActiveSectionContextProvider>
                     <Header />
                     {children}
+                    <Footer />
+
+                    <Toaster position="bottom-right" />
                 </ActiveSectionContextProvider>
             </body>
         </html>

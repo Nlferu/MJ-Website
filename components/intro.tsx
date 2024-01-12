@@ -19,8 +19,9 @@ export default function Intro() {
     return (
         <section className="max-w-[51rem] min-h-[100vh] text-center scroll-mt-[100rem]" ref={ref} id="home">
             <div className="flex flex-col items-center justify-center">
+                <div className="absolute h-[20rem] w-[20rem] mb-[2.5rem] animate-fullSpin rounded-full border-b-2 border-black"></div>
                 <Image
-                    className="w-[20rem] h-[20rem] object-fit rounded-full mb-10 flex self-center justify-center"
+                    className="w-[17rem] sm:w-[20rem] h-[17rem] sm:h-[20rem] object-fit rounded-full mb-10 flex self-center justify-center"
                     src="/icon.png"
                     alt="MJ"
                     height="400"
@@ -30,15 +31,21 @@ export default function Intro() {
                 />
             </div>
             <div className={`${cormorant.className} text-5xl mb-[4rem]`}>Marta Jabłońska</div>
-            <div className="flex gap-20">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-10 sm:gap-20">
                 <div className="flex gap-5">
                     <BsTelephone className="text-3xl" /> 666 666 666
                 </div>
                 <div className="flex gap-5">
-                    <BsEnvelope className="text-3xl" /> mailito@interia.pl
+                    <BsEnvelope className="text-3xl" />{" "}
+                    <a className="underline" href="mailto:mailito@interia.pl">
+                        mailito@interia.pl
+                    </a>
                 </div>
                 <div className="flex gap-5">
-                    <TfiWorld className="text-3xl" /> marta-jablonska.vercel.app
+                    <TfiWorld className="text-3xl" />{" "}
+                    <a className="underline" href="marta-jablonska.vercel.app">
+                        marta-jablonska.vercel.app
+                    </a>
                 </div>
             </div>
         </section>

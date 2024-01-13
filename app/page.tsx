@@ -3,6 +3,7 @@ import About from "@/components/about"
 import Skills from "@/components/skills"
 import Experience from "@/components/experience"
 import Contact from "@/components/contact"
+import Hexagon from "@/components/hexagon"
 
 export default function Home() {
     return (

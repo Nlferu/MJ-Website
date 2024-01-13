@@ -18,10 +18,10 @@ export default function Intro() {
 
     return (
         <section className="max-w-[51rem] min-h-[100vh] text-center scroll-mt-[100rem]" ref={ref} id="home">
-            <div className="flex flex-col items-center justify-center">
-                <div className="absolute h-[20rem] w-[20rem] mb-[2.5rem] animate-fullSpin rounded-full border-b-2 border-black"></div>
+            <div className="flex flex-col items-center justify-center relative">
+                <div className="absolute w-[16rem] sm:w-[20rem] h-[16rem] sm:h-[20rem] mb-[2.5rem] animate-fullSpin rounded-full border-b-2 border-black z-10"></div>
                 <Image
-                    className="w-[17rem] sm:w-[20rem] h-[17rem] sm:h-[20rem] object-fit rounded-full mb-10 flex self-center justify-center"
+                    className="w-[16rem] sm:w-[20rem] h-[16rem] sm:h-[20rem] object-fit rounded-full mb-10 flex self-center justify-center"
                     src="/icon.png"
                     alt="MJ"
                     height="400"

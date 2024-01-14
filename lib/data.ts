@@ -21,6 +21,16 @@ export const links = [
     },
 ] as const
 
+export const skills = [
+    { name: "Spoti" },
+    { name: "Enova" },
+    { name: "Symfonia" },
+    { name: "Płatnik" },
+    { name: "SAP" },
+    { name: "Optima" },
+    { name: "Microsoft Office" },
+] as const
+
 export const experienceData = [
     {
         title: "Education",

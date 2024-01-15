@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" className="!scroll-smooth">
-            <body className={`${inter.className} pt-28 sm:pt-36 bg-white`}>
+            <body className={`${inter.className} pt-28 sm:pt-36 bg-gray-300`}>
                 <ActiveSectionContextProvider>
                     <Header />
                     {children}

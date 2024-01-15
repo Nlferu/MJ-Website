@@ -28,7 +28,7 @@ export const skills = [
     { name: "Płatnik" },
     { name: "SAP" },
     { name: "Optima" },
-    { name: "Microsoft Office" },
+    { name: "Microsoft Office", icon: "/skills/Microsoft_Office_logo.png" },
 ] as const
 
 export const experienceData = [

@@ -3,6 +3,7 @@
 import React from "react"
 import SectionHeading from "./section-heading"
 import hex from "@/styles/hex.module.css"
+import Image from "next/image"
 import { skills } from "@/lib/data"
 import { motion } from "framer-motion"
 import { certificates } from "@/lib/data"
@@ -34,9 +35,12 @@ export default function Skills() {
         >
             {[1, 2, 3].map((index) => (
                 <div className={`${hex[`h${index}`]} bg-black w-[90px] h-[51px] absolute top-[15px]`}>
-                    <div className="text-white rotate-[60deg] mt-[0.8rem]">{skillName}</div>
+                    <div className="text-white rotate-[60deg] py-[0.8rem]">{skillName}</div>
                 </div>
             ))}
+            <div className="relative w-[2rem] h-[2rem] ml-[2rem] rounded-full z-[100] bg-orange-700">
+                {/* <Image className="rounded-full" src={skills[6].icon} alt="MJ" height="400" width="400" quality="95" priority={true} /> */}
+            </div>
         </motion.div>
     )
 
@@ -57,9 +61,12 @@ export default function Skills() {
                     >
                         {[1, 2, 3].map((index) => (
                             <div className={`${hex[`h${index}`]} bg-black w-[90px] h-[51px] absolute top-[15px]`}>
-                                <div className="text-white rotate-[60deg]">{skills[6].name}</div>
+                                <div className="text-white rotate-[60deg] py-[0.1rem]"> {skills[6].name}</div>
                             </div>
                         ))}
+                        <div className="relative w-[2rem] h-[2rem] rounded-full z-[100] bg-red-700">
+                            {/* <Image className="rounded-full" src={skills[6].icon} alt="MJ" height="400" width="400" quality="95" priority={true} /> */}
+                        </div>
                     </motion.div>
 
                     {[1, 2, 3, 4, 5, 6].map((col) => (

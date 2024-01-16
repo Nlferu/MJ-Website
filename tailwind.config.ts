@@ -8,6 +8,9 @@ const config: Config = {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
                 "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
             },
+            dropShadow: {
+                shady: "3px 3px 2px rgba(0, 0, 0, 0.9)",
+            },
             animation: {
                 fullSpin: "spin 3s linear infinite",
             },

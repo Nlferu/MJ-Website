@@ -34,12 +34,20 @@ export default function Skills() {
             custom={index}
         >
             {[1, 2, 3].map((index) => (
-                <div className={`${hex[`h${index}`]} bg-black w-[90px] h-[51px] absolute top-[15px]`}>
-                    <div className="text-white rotate-[60deg] py-[0.8rem]">{skillName}</div>
-                </div>
+                <div key={index} className={`${hex[`h${index}`]} bg-gray-400 w-[90px] h-[51px] absolute top-[15px]`}></div>
             ))}
-            <div className="relative w-[2rem] h-[2rem] ml-[2rem] rounded-full z-[100] bg-orange-700">
-                {/* <Image className="rounded-full" src={skills[6].icon} alt="MJ" height="400" width="400" quality="95" priority={true} /> */}
+
+            <div className="relative w-[2rem] h-[2rem] ml-[2rem] rounded-full z-[100]">
+                <Image
+                    className="rounded-full translate-x-[-3px] translate-y-1 drop-shadow-shady"
+                    src={skills[index - 1].icon}
+                    alt="MJ"
+                    height="400"
+                    width="400"
+                    quality="95"
+                    priority={true}
+                />
+                <div className="text-white w-[90px] h-[51px] translate-x-[-35%] translate-y-[1rem] drop-shadow-shady">{skillName}</div>
             </div>
         </motion.div>
     )
@@ -60,12 +68,22 @@ export default function Skills() {
                         }}
                     >
                         {[1, 2, 3].map((index) => (
-                            <div className={`${hex[`h${index}`]} bg-black w-[90px] h-[51px] absolute top-[15px]`}>
-                                <div className="text-white rotate-[60deg] py-[0.1rem]"> {skills[6].name}</div>
-                            </div>
+                            <div key={index} className={`${hex[`h${index}`]} bg-gray-400 w-[90px] h-[51px] absolute top-[15px]`}></div>
                         ))}
-                        <div className="relative w-[2rem] h-[2rem] rounded-full z-[100] bg-red-700">
-                            {/* <Image className="rounded-full" src={skills[6].icon} alt="MJ" height="400" width="400" quality="95" priority={true} /> */}
+
+                        <div className="relative w-[2rem] h-[2rem] ml-[2rem] rounded-full z-[100]">
+                            <Image
+                                className="rounded-full translate-x-[-3px] translate-y-1 drop-shadow-shady"
+                                src={skills[6].icon}
+                                alt="MJ"
+                                height="400"
+                                width="400"
+                                quality="95"
+                                priority={true}
+                            />
+                            <div className="text-white text-xs w-[90px] h-[51px] translate-x-[-35%] translate-y-[0.5rem] drop-shadow-shady">
+                                {skills[6].name}
+                            </div>
                         </div>
                     </motion.div>
 

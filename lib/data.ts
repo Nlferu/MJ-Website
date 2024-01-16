@@ -22,13 +22,13 @@ export const links = [
 ] as const
 
 export const skills = [
-    { name: "Spoti" },
-    { name: "Enova" },
-    { name: "Symfonia" },
-    { name: "Płatnik" },
-    { name: "SAP" },
-    { name: "Optima" },
-    { name: "Microsoft Office", icon: "/skills/Microsoft_Office_logo.png" },
+    { name: "Spoti", icon: "/skills/spoti.jpg" },
+    { name: "Enova", icon: "/skills/enova.png" },
+    { name: "Symfonia", icon: "/skills/symfonia.jpg" },
+    { name: "Płatnik", icon: "/skills/platnik.jpeg" },
+    { name: "SAP", icon: "/skills/sap.gif" },
+    { name: "Optima", icon: "/skills/spoti.jpg" },
+    { name: "Microsoft Office", icon: "/skills/msOffice.png" },
 ] as const
 
 export const experienceData = [

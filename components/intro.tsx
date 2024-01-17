@@ -29,12 +29,14 @@ export default function Intro() {
                 }}
             >
                 <motion.div
-                    className="flex flex-col items-center justify-center relative"
+                    className="flex flex-col items-center justify-center"
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 1.1, duration: 1 }}
                 >
-                    <div className="absolute w-[16rem] sm:w-[20rem] h-[16rem] sm:h-[20rem] mb-[2.5rem] animate-fullSpin rounded-full border-b-2 border-black z-10"></div>
+                    {/* PROBLEM NUMBER 1 */}
+                    <div className="absolute w-[16rem] sm:w-[20rem] h-[16rem] sm:h-[20rem] mb-[2.5rem] animate-fullSpin rounded-full border-b-2 border-black z-[-999]"></div>
+
                     <Image
                         className="w-[16rem] sm:w-[20rem] h-[16rem] sm:h-[20rem] object-fit rounded-full mb-10 flex self-center justify-center"
                         src="/icon.png"

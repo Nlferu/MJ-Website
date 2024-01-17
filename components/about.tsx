@@ -5,7 +5,7 @@ import SectionHeading from "./section-heading"
 import { useSectionInView } from "@/lib/hooks"
 
 export default function About() {
-    const { ref } = useSectionInView("About", 1)
+    const { ref } = useSectionInView("About", 0.8)
 
     return (
         <section className="max-w-[51rem] text-center mb-20" ref={ref} id="about">

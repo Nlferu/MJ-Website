@@ -8,16 +8,19 @@ import { motion } from "framer-motion"
 import { useActiveSectionContext } from "@/context/active-section-context"
 
 export default function Header() {
-    const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
-    const [scrollPosition, setScrollPosition] = useState(0)
+    const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
+    const [scrollPosition, setScrollPosition] = useState<boolean>(false)
 
     const handleScroll = () => {
-        const position = window.scrollY
-        setScrollPosition(position)
+        if (window.scrollY !== 0) {
+            setScrollPosition(true)
+        } else {
+            setScrollPosition(false)
+        }
     }
 
     useEffect(() => {
-        window.addEventListener("scroll", handleScroll, { passive: true })
+        window.addEventListener("scroll", handleScroll)
 
         return () => {
             window.removeEventListener("scroll", handleScroll)
@@ -32,15 +35,16 @@ export default function Header() {
                         "flex items-center justify-center gap-5 lg:gap-[7rem] sm:gap-[3.5rem] px-[1.5rem] text-lg sm:text-2xl transition-all duration-1000 w-full flex-wrap sm:flex-nowrap",
                         {
                             "!w-full border-b-[1px] border-t-[1px] border-black bg-black/20 px-[1.5rem] py-[0.7rem] backdrop-blur-md !transition-all !duration-1000":
-                                scrollPosition !== 0,
+                                scrollPosition,
                         }
                     )}
                     initial={{ y: -100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                 >
                     {links.map((link) => (
-                        <li className="" key={link.hash}>
+                        <li className="relative" key={link.hash}>
                             <Link
+                                className=" hover:text-white"
                                 href={link.hash}
                                 onClick={() => {
                                     setActiveSection(link.name)
@@ -48,6 +52,20 @@ export default function Header() {
                                 }}
                             >
                                 {link.name}
+
+                                {link.name === activeSection && (
+                                    <motion.span
+                                        className={clsx("flex absolute w-[120%] h-[120%] bg-gray-500 bottom-[-10%] left-[-10%] rounded-lg z-[-1]", {
+                                            "!bg-transparent": activeSection === "Home",
+                                        })}
+                                        layoutId="activeSection"
+                                        transition={{
+                                            type: "spring",
+                                            stiffness: 500,
+                                            damping: 28,
+                                        }}
+                                    ></motion.span>
+                                )}
                             </Link>
                         </li>
                     ))}

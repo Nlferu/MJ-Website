@@ -8,7 +8,7 @@ import { useSectionInView } from "@/lib/hooks"
 import { motion } from "framer-motion"
 
 export default function Experience() {
-    const { ref } = useSectionInView("Experience", 1)
+    const { ref } = useSectionInView("Experience", 0.5)
 
     return (
         <section className="max-w-[80rem] text-center mb-20" ref={ref} id="experience">
@@ -18,12 +18,13 @@ export default function Experience() {
                     return (
                         <React.Fragment key={index}>
                             <motion.div
+                                // PROBLEM NUMBER 2
                                 initial={{ opacity: 0, x: 600 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{
                                     once: true,
                                 }}
-                                transition={{ delay: 0.4 * index, duration: 1 }}
+                                transition={{ delay: 0.4 * index, duration: 0.5 }}
                             >
                                 <Exp {...item} />
                             </motion.div>

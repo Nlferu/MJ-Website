@@ -10,11 +10,11 @@ import { certificates } from "@/lib/data"
 import { useSectionInView } from "@/lib/hooks"
 
 export default function Skills() {
-    const { ref } = useSectionInView("Skills", 1)
+    const { ref } = useSectionInView("Skills", 0.5)
 
     const scaleAnimationVariants = {
         animate: (index: number) => ({
-            scale: [1, 0.01, 1],
+            scale: [0.1, 0.01, 1],
             transition: {
                 duration: 1.5,
                 delay: 0.13 * index,
@@ -34,7 +34,7 @@ export default function Skills() {
             custom={index}
         >
             {[1, 2, 3].map((index) => (
-                <div key={index} className={`${hex[`h${index}`]} bg-gray-400 w-[90px] h-[51px] absolute top-[15px]`}></div>
+                <div key={index} className={`${hex[`h${index}`]} bg-[#34312D] w-[90px] h-[51px] absolute top-[15px]`}></div>
             ))}
 
             <div className="relative w-[2rem] h-[2rem] ml-[2rem] rounded-full z-[100]">
@@ -68,7 +68,7 @@ export default function Skills() {
                         }}
                     >
                         {[1, 2, 3].map((index) => (
-                            <div key={index} className={`${hex[`h${index}`]} bg-gray-400 w-[90px] h-[51px] absolute top-[15px]`}></div>
+                            <div key={index} className={`${hex[`h${index}`]} bg-[#34312D] w-[90px] h-[51px] absolute top-[15px]`}></div>
                         ))}
 
                         <div className="relative w-[2rem] h-[2rem] ml-[2rem] rounded-full z-[100]">

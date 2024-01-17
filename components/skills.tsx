@@ -16,7 +16,7 @@ export default function Skills() {
         animate: (index: number) => ({
             scale: [1, 0.01, 1],
             transition: {
-                duration: 2,
+                duration: 1.5,
                 delay: 0.13 * index,
             },
         }),

@@ -34,7 +34,7 @@ export default function Header() {
                     className={clsx(
                         "flex items-center justify-center gap-5 lg:gap-[7rem] sm:gap-[3.5rem] px-[1.5rem] text-lg sm:text-2xl transition-all duration-1000 w-full flex-wrap sm:flex-nowrap",
                         {
-                            "!w-full border-b-[1px] border-t-[1px] border-black bg-black/20 px-[1.5rem] py-[0.7rem] backdrop-blur-md !transition-all !duration-1000":
+                            "border-b-[1px] border-t-[1px] border-black bg-black/20 py-[0.7rem] backdrop-blur-md !transition-all !duration-1000":
                                 scrollPosition,
                         }
                     )}

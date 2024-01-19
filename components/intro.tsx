@@ -34,11 +34,10 @@ export default function Intro() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 1.1, duration: 1 }}
                 >
-                    {/* PROBLEM NUMBER 1 */}
-                    <div className="absolute w-[16rem] sm:w-[20rem] h-[16rem] sm:h-[20rem] mb-[2.5rem] animate-fullSpin rounded-full border-b-2 border-black z-[-999]"></div>
+                    <div className="flex items-center justify-center absolute p-[7rem] sm:p-[10rem] mb-[2.5rem] animate-fullSpin rounded-full border-b-2 border-black"></div>
 
                     <Image
-                        className="w-[16rem] sm:w-[20rem] h-[16rem] sm:h-[20rem] object-fit rounded-full mb-10 flex self-center justify-center"
+                        className="w-[14rem] sm:w-[20rem] h-[14rem] sm:h-[20rem] object-fit rounded-full mb-10 flex self-center justify-center"
                         src="/icon.png"
                         alt="MJ"
                         height="400"

@@ -10,7 +10,7 @@ import { certificates } from "@/lib/data"
 import { useSectionInView } from "@/lib/hooks"
 
 export default function Skills() {
-    const { ref } = useSectionInView("Skills", 0.5)
+    const { ref } = useSectionInView("Skills", 0.4)
 
     const scaleAnimationVariants = {
         animate: (index: number) => ({

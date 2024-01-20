@@ -21,7 +21,7 @@ export default function Intro() {
     const opacityProgess = useTransform(scrollYProgress, [1, 0.3], [1, 0])
 
     return (
-        <section className="max-w-[51rem] min-h-[100vh] text-center scroll-mt-[100rem]" ref={ref} id="home">
+        <section className="max-w-[51rem] min-h-[100vh] text-center scroll-mt-[100rem] mt-10 sm:mt-0" ref={ref} id="home">
             <motion.div
                 ref={reference}
                 style={{

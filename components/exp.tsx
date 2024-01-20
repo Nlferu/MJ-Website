@@ -8,7 +8,7 @@ type ExpProps = typeof experienceData[number]
 
 export default function Exp({ title, location, description, icon, date }: ExpProps) {
     return (
-        <section className="flex relative m-4">
+        <section className="flex relative justify-center m-4">
             <div className="hidden sm:flex items-start w-44 pt-0.5 relative">
                 <div className="w-full text-gray-500 text-sm pt-[1.4rem]">{date}</div>
                 <div className="bg-black w-px h-full translate-x-[2.66rem] translate-y-[1rem] opacity-30"></div>

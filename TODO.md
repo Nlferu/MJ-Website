@@ -1,1 +1,1 @@
-Animation over logo to be checked on deployed version
+Fix scroll not moving to home 0

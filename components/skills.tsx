@@ -34,12 +34,12 @@ export default function Skills() {
             custom={index}
         >
             {[1, 2, 3].map((index) => (
-                <div key={index} className={`${hex[`h${index}`]} bg-[#34312D] w-[90px] h-[51px] absolute top-[15px]`}></div>
+                <div key={index} className={`${hex[`h${index}`]} bg-[#F5EBE0] w-[90px] h-[51px] absolute top-[15px]`}></div>
             ))}
 
             <div className="relative w-[2rem] h-[2rem] ml-[2rem] rounded-full z-[100]">
                 <Image
-                    className="rounded-full translate-x-[-3px] translate-y-1 drop-shadow-shady"
+                    className="rounded-full translate-x-[-3px] translate-y-1 font-bold"
                     src={skills[index - 1].icon}
                     alt="MJ"
                     height="400"
@@ -47,7 +47,7 @@ export default function Skills() {
                     quality="95"
                     priority={true}
                 />
-                <div className="text-white w-[90px] h-[51px] translate-x-[-35%] translate-y-[1rem] drop-shadow-shady">{skillName}</div>
+                <div className="text-black w-[90px] h-[51px] translate-x-[-35%] translate-y-[1rem] font-bold">{skillName}</div>
             </div>
         </motion.div>
     )
@@ -68,12 +68,12 @@ export default function Skills() {
                         }}
                     >
                         {[1, 2, 3].map((index) => (
-                            <div key={index} className={`${hex[`h${index}`]} bg-[#34312D] w-[90px] h-[51px] absolute top-[15px]`}></div>
+                            <div key={index} className={`${hex[`h${index}`]} bg-[#F5EBE0] w-[90px] h-[51px] absolute top-[15px]`}></div>
                         ))}
 
                         <div className="relative w-[2rem] h-[2rem] ml-[2rem] rounded-full z-[100]">
                             <Image
-                                className="rounded-full translate-x-[-3px] translate-y-1 drop-shadow-shady"
+                                className="rounded-full translate-x-[-3px] translate-y-1 font-bold"
                                 src={skills[6].icon}
                                 alt="MJ"
                                 height="400"
@@ -81,9 +81,7 @@ export default function Skills() {
                                 quality="95"
                                 priority={true}
                             />
-                            <div className="text-white text-xs w-[90px] h-[51px] translate-x-[-35%] translate-y-[0.5rem] drop-shadow-shady">
-                                {skills[6].name}
-                            </div>
+                            <div className="text-black w-[90px] h-[51px] translate-x-[-35%] translate-y-[0.5rem] font-bold">{skills[6].name}</div>
                         </div>
                     </motion.div>
 

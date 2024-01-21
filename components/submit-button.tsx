@@ -8,9 +8,9 @@ export default function SubmitButton() {
     return (
         <button
             className="group flex font-semibold items-center self-center justify-center w-[7rem] gap-2 py-[0.7rem] sm:py-[0.9rem]
-                    text-black/80 hover:text-black borderBlack borderDevil bg-stone-400 bg-opacity-50
-                    rounded-full focus:scale-110 hover:scale-110 hover:bg-stone-500 hover:bg-opacity-100
-                    active:scale-105 duration-500 hover:translate-y-[-4px] disabled:scale-100 disabled:bg-opacity-50"
+                    text-black/80 hover:text-black bg-[#E3D5CA]/70
+                    rounded-full focus:scale-110 hover:scale-110 hover:bg-[#F5EBE0] hover:bg-opacity-100
+                    active:scale-105 duration-500 hover:translate-y-[-4px] disabled:scale-100 disabled:bg-opacity-50 border border-white"
             type="submit"
             disabled={pending}
         >

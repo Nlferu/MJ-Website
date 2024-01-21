@@ -8,6 +8,8 @@ import { Toaster } from "react-hot-toast"
 
 // Icon font: Balgin
 // Website Font: Cormorant Garamond
+// Quicksand, Forum, Petrona
+// #D5BDAF #E3D5CA #D6CCC2 #F5EBE0 #FFFFFF
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
@@ -18,7 +20,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" className="!scroll-smooth">
-            <body className={`${inter.className} pt-28 sm:pt-36 bg-gray-300`}>
+            <body className={`${inter.className} pt-28 sm:pt-36 bg-gray-100`}>
                 <ActiveSectionContextProvider>
                     <Header />
                     {children}

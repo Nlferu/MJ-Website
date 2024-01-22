@@ -6,11 +6,10 @@ import hex from "@/styles/hex.module.css"
 import Image from "next/image"
 import { skills } from "@/lib/data"
 import { motion } from "framer-motion"
-import { certificates } from "@/lib/data"
 import { useSectionInView } from "@/lib/hooks"
 
 export default function Skills() {
-    const { ref } = useSectionInView("Skills", 0.4)
+    const { ref } = useSectionInView("Skills", 0.8)
 
     const scaleAnimationVariants = {
         animate: (index: number) => ({
@@ -34,7 +33,7 @@ export default function Skills() {
             custom={index}
         >
             {[1, 2, 3].map((index) => (
-                <div key={index} className={`${hex[`h${index}`]} bg-[#F5EBE0] w-[90px] h-[51px] absolute top-[15px]`}></div>
+                <div key={index} className={`${hex[`h${index}`]} bg-[#E3D5CA] w-[90px] h-[51px] absolute top-[15px]`}></div>
             ))}
 
             <div className="relative w-[2rem] h-[2rem] ml-[2rem] rounded-full z-[100]">
@@ -68,7 +67,7 @@ export default function Skills() {
                         }}
                     >
                         {[1, 2, 3].map((index) => (
-                            <div key={index} className={`${hex[`h${index}`]} bg-[#F5EBE0] w-[90px] h-[51px] absolute top-[15px]`}></div>
+                            <div key={index} className={`${hex[`h${index}`]} bg-[#E3D5CA] w-[90px] h-[51px] absolute top-[15px]`}></div>
                         ))}
 
                         <div className="relative w-[2rem] h-[2rem] ml-[2rem] rounded-full z-[100]">
@@ -89,19 +88,6 @@ export default function Skills() {
                         <React.Fragment key={col}>{generateHexagon(`${hex[`c${col}`]}`, skills[col - 1].name, col)}</React.Fragment>
                     ))}
                 </div>
-            </div>
-
-            <SectionHeading>Licenses & Certificates</SectionHeading>
-            <div>
-                {certificates.map((item, index) => {
-                    return (
-                        <div className="flex flex-col mb-10" key={index}>
-                            <div className="font-bold text-lg">{item.title}</div>
-                            <div className="">{item.issuer}</div>
-                            <div className="text-sm">{item.date}</div>
-                        </div>
-                    )
-                })}
             </div>
         </section>
     )

@@ -34,7 +34,7 @@ export default function Intro() {
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 1.1, duration: 1 }}
                 >
-                    <div className="flex items-center justify-center absolute p-[7rem] sm:p-[10rem] mb-[2.5rem] animate-fullSpin rounded-full border-b-2 border-black"></div>
+                    <div className="flex items-center justify-center absolute p-[7rem] sm:p-[10rem] mb-[2.5rem] animate-fullSpin rounded-full border-b-2 border-[#c2afa1]"></div>
 
                     <Image
                         className="w-[14rem] sm:w-[20rem] h-[14rem] sm:h-[20rem] object-fit rounded-full mb-10 flex self-center justify-center"
@@ -55,16 +55,16 @@ export default function Intro() {
                     transition={{ delay: 0.2, duration: 1 }}
                 >
                     <div className="flex gap-5">
-                        <BsTelephone className="text-3xl" /> 666 666 666
+                        <BsTelephone className="text-3xl text-[#c2afa1]" /> 666 666 666
                     </div>
                     <div className="flex gap-5">
-                        <BsEnvelope className="text-3xl" />{" "}
+                        <BsEnvelope className="text-3xl text-[#c2afa1]" />{" "}
                         <a className="underline" href="mailto:mailito@interia.pl">
                             mailito@interia.pl
                         </a>
                     </div>
                     <div className="flex gap-5">
-                        <TfiWorld className="text-3xl" />{" "}
+                        <TfiWorld className="text-3xl text-[#c2afa1]" />{" "}
                         <a className="underline" href="marta-jablonska.vercel.app">
                             marta-jablonska.vercel.app
                         </a>

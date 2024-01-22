@@ -34,7 +34,7 @@ export default function Header() {
                     className={clsx(
                         "flex items-center justify-center gap-5 lg:gap-[7rem] sm:gap-[3.5rem] px-[1.5rem] text-lg sm:text-2xl transition-all duration-1000 w-full flex-wrap sm:flex-nowrap",
                         {
-                            "border-b border-t border-white bg-[#E3D5CA]/50 py-[0.7rem] backdrop-blur-md !transition-all !duration-1000": scrollPosition,
+                            "border-b border-t border-[#c2afa1] bg-[#E3D5CA] py-[0.7rem] backdrop-blur-md !transition-all !duration-1000": scrollPosition,
                         }
                     )}
                     initial={{ y: -100, opacity: 0 }}
@@ -54,12 +54,9 @@ export default function Header() {
 
                                 {link.name === activeSection && (
                                     <motion.span
-                                        className={clsx(
-                                            "flex absolute w-[120%] h-[120%] bg-[#F5EBE0] bottom-[-10%] left-[-10%] rounded-lg z-[-1] border border-white",
-                                            {
-                                                "!bg-transparent border-none": activeSection === "Home",
-                                            }
-                                        )}
+                                        className={clsx("flex absolute w-[120%] h-[120%] bg-white bottom-[-10%] left-[-10%] rounded-lg z-[-1]", {
+                                            "!bg-transparent border-none": activeSection === "Home",
+                                        })}
                                         layoutId="activeSection"
                                         transition={{
                                             type: "spring",

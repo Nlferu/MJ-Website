@@ -2,6 +2,7 @@ import "@/styles/globals.css"
 import ActiveSectionContextProvider from "@/context/active-section-context"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import Mover from "@/components/mover"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import { Toaster } from "react-hot-toast"
@@ -20,13 +21,14 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" className="!scroll-smooth">
-            <body className={`${inter.className} pt-28 sm:pt-36 bg-gray-100`}>
+            <body className={`${inter.className} pt-28 sm:pt-36 bg-white`}>
                 <ActiveSectionContextProvider>
                     <Header />
                     {children}
                     <Footer />
 
                     <Toaster position="bottom-right" />
+                    <Mover />
                 </ActiveSectionContextProvider>
             </body>
         </html>

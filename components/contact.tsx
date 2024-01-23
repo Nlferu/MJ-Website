@@ -95,6 +95,7 @@ export default function Contact() {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
+                        viewport={{ once: true }}
                     >
                         <SubmitButton />
                     </motion.div>

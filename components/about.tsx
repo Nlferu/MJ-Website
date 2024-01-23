@@ -11,7 +11,13 @@ export default function About() {
     return (
         <section className="max-w-[51rem] text-center mb-0 sm:mb-20 mt-[-8rem]" ref={ref} id="about">
             <SectionHeading>About Me</SectionHeading>
-            <motion.div className="flex flex-col" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }}>
+            <motion.div
+                className="flex flex-col"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: 0.5, duration: 1 }}
+                viewport={{ once: true }}
+            >
                 Hello! I'm Marta. Since high school, I have known that I want to be an accountant. Determined to turn my passion into a profession, I pursued a
                 comprehensive education, earning both a bachelor's and master's degree from the prestigious University of Economics in Krakow.
                 <span className="my-2">

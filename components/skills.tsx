@@ -27,9 +27,7 @@ export default function Skills() {
             initial="initial"
             variants={scaleAnimationVariants}
             whileInView="animate"
-            viewport={{
-                once: false,
-            }}
+            viewport={{ once: true }}
             custom={index}
         >
             {[1, 2, 3].map((index) => (
@@ -62,9 +60,7 @@ export default function Skills() {
                         initial="initial"
                         variants={scaleAnimationVariants}
                         whileInView="animate"
-                        viewport={{
-                            once: false,
-                        }}
+                        viewport={{ once: true }}
                     >
                         {[1, 2, 3].map((index) => (
                             <div key={index} className={`${hex[`h${index}`]} bg-[#E3D5CA] w-[90px] h-[51px] absolute top-[15px]`}></div>

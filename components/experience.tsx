@@ -16,28 +16,25 @@ export default function Experience() {
     return (
         <section className="max-w-[80rem] text-center mb-0 sm:mb-20" ref={ref} id="experience">
             <SectionHeading>Education</SectionHeading>
-            {educationData.map((item, index) => {
-                return (
-                    <React.Fragment key={index}>
-                        <motion.div
-                            className="mb-[-4rem]"
-                            initial={{ opacity: 0, x: `100%` }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.4 * index, duration: 1 }}
-                            viewport={{ once: true }}
-                        >
-                            <Edu {...item} />
-                        </motion.div>
-                    </React.Fragment>
-                )
-            })}
+            {educationData.map((item, index) => (
+                <React.Fragment key={index}>
+                    <motion.div
+                        className="mb-[-4rem]"
+                        initial={{ opacity: 0, x: `100%` }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.4 * index, duration: 1 }}
+                        viewport={{ once: true }}
+                    >
+                        <Edu {...item} />
+                    </motion.div>
+                </React.Fragment>
+            ))}
 
             <SectionHeading>Licenses & Certificates</SectionHeading>
-            {certificates.map((item, index) => {
-                return (
+            {certificates.map((item, index) => (
+                <React.Fragment key={index}>
                     <motion.div
                         className="flex flex-col mb-10"
-                        key={index}
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.5 * index, duration: 1 }}
@@ -47,24 +44,22 @@ export default function Experience() {
                         <div className="">{item.issuer}</div>
                         <div className="text-sm">{item.date}</div>
                     </motion.div>
-                )
-            })}
+                </React.Fragment>
+            ))}
 
             <SectionHeading>Experience</SectionHeading>
-            {experienceData.map((item, index) => {
-                return (
-                    <React.Fragment key={index}>
-                        <motion.div
-                            initial={{ opacity: 0, x: `100%` }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.4 * index, duration: 1 }}
-                            viewport={{ once: true }}
-                        >
-                            <Exp {...item} />
-                        </motion.div>
-                    </React.Fragment>
-                )
-            })}
+            {experienceData.map((item, index) => (
+                <React.Fragment key={index}>
+                    <motion.div
+                        initial={{ opacity: 0, x: `100%` }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ delay: 0.4 * index, duration: 1 }}
+                        viewport={{ once: true }}
+                    >
+                        <Exp {...item} />
+                    </motion.div>
+                </React.Fragment>
+            ))}
         </section>
     )
 }

@@ -1,5 +1,4 @@
-Success/Error Messages to be formatted
-scroll to be formatted
-font
 update licenses & certs
-animation only once everywhere
+change sendMail on production
+
+fonts added and ready to be tested

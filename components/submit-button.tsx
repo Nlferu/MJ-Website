@@ -15,7 +15,7 @@ export default function SubmitButton() {
             disabled={pending}
         >
             {pending ? (
-                <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-black"></div>
+                <div className="h-6 w-5 animate-spin rounded-full border-b-2 border-[#b89984]"></div>
             ) : (
                 <>
                     Send <FaPaperPlane className="text-sm opacity-80 transition-all duration-500 group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}

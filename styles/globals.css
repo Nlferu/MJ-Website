@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Scroll Bar Color */
+html ::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Scroll Bar Width */
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+/* Scroll Bar Handle Color */
+html ::-webkit-scrollbar-thumb {
+    background: #ffb997;
+    border-radius: 0.2rem;
+}
+
+/* Handle on hover */
+html ::-webkit-scrollbar-thumb:hover {
+    background: #ba966b;
+}

@@ -43,7 +43,7 @@ export default function Header() {
                     {links.map((link) => (
                         <li className="relative" key={link.hash}>
                             <Link
-                                className="text-black/80 hover:text-white"
+                                className="text-black/80 hover:text-[#a08069]"
                                 href={link.hash}
                                 onClick={() => {
                                     setActiveSection(link.name)

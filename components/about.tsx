@@ -9,7 +9,7 @@ export default function About() {
     const { ref } = useSectionInView("About", 0.8)
 
     return (
-        <section className="max-w-[51rem] text-center mb-0 sm:mb-20 mt-[-8rem]" ref={ref} id="about">
+        <section className="max-w-[51rem] text-base sm:text-lg text-center mb-0 sm:mb-20 mt-[-8rem]" ref={ref} id="about">
             <SectionHeading>About Me</SectionHeading>
             <motion.div
                 className="flex flex-col"
@@ -20,7 +20,7 @@ export default function About() {
             >
                 Hello! I'm Marta. Since high school, I have known that I want to be an accountant. Determined to turn my passion into a profession, I pursued a
                 comprehensive education, earning both a bachelor's and master's degree from the prestigious University of Economics in Krakow.
-                <span className="my-2">
+                <span className="my-4">
                     My professional journey has taken me through diverse landscapes—from a dynamic small accounting office to a bustling corporation, and
                     finally to a unique hybrid that seamlessly blends both sectors. Along the way, I took charge of managing a branch of an accounting office,
                     gaining invaluable hands-on experience in human resources management.

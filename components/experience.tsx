@@ -1,9 +1,9 @@
 "use client"
 
 import React from "react"
-import SectionHeading from "./section-heading"
 import Edu from "./edu"
 import Exp from "./exp"
+import SectionHeading from "./section-heading"
 import { certificates } from "@/lib/data"
 import { educationData } from "@/lib/data"
 import { experienceData } from "@/lib/data"

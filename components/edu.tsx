@@ -23,7 +23,7 @@ export default function Edu({ school, title, icon, date }: EduProps) {
                     {title} <span className="sm:hidden font-normal">{date}</span>
                 </div>
 
-                <div className="w-[3rem] h-[3rem] rounded-full z-20 absolute left-2 top-2 sm:hidden">
+                <div className="w-[3rem] h-[3rem] rounded-full z-20 absolute left-1/2 translate-x-[-50%] top-[-3rem] sm:hidden">
                     <Image className="rounded-full" src={icon} alt="MJ" height="400" width="400" quality="95" priority={true} />
                 </div>
             </div>

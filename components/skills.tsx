@@ -31,7 +31,7 @@ export default function Skills() {
             custom={index}
         >
             {[1, 2, 3].map((index) => (
-                <div key={index} className={`${hex[`h${index}`]} bg-[#E3D5CA] w-[90px] h-[51px] absolute top-[15px]`}></div>
+                <div key={index} className={`${hex[`h${index}`]} bg-[#E3D5CA] w-[90px] h-[51px] absolute top-[15px] border-x border-[#c2afa1]`}></div>
             ))}
 
             <div className="relative w-[2rem] h-[2rem] ml-[2rem] rounded-full z-[100]">
@@ -63,7 +63,10 @@ export default function Skills() {
                         viewport={{ once: true }}
                     >
                         {[1, 2, 3].map((index) => (
-                            <div key={index} className={`${hex[`h${index}`]} bg-[#E3D5CA] w-[90px] h-[51px] absolute top-[15px]`}></div>
+                            <div
+                                key={index}
+                                className={`${hex[`h${index}`]} bg-[#E3D5CA] w-[90px] h-[51px] absolute top-[15px] border-x border-[#c2afa1]`}
+                            ></div>
                         ))}
 
                         <div className="relative w-[2rem] h-[2rem] ml-[2rem] rounded-full z-[100]">

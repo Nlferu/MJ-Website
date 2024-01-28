@@ -25,7 +25,7 @@ export default function Contact() {
         <motion.section className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center" ref={ref} id="contact">
             <SectionHeading>Contact Me</SectionHeading>
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 2 }} viewport={{ once: true }}>
-                <p className="text-stone-900">
+                <p className="text-stone-900 text-base sm:text-lg text">
                     Please contact me directly at{" "}
                     <a className="underline" href="mailto:mailito@interia.pl">
                         mailito@interia.pl
@@ -73,7 +73,7 @@ export default function Contact() {
                         resetForm()
                     }}
                 >
-                    <div className="flex mb-2">Enter your email:</div>
+                    <div className="flex mb-2 text-base sm:text-lg">Enter your email:</div>
                     <input
                         className="h-12 px-4 rounded-lg bg-[#E3D5CA] focus:bg-opacity-100 borderBlack borderDevil focus:outline focus:outline-1 focus:outline-offset-0 focus:outline-[#c2afa1] transition-all duration-75"
                         name="senderEmail"
@@ -83,7 +83,7 @@ export default function Contact() {
                         value={formData.senderEmail}
                         onChange={handleInputChange}
                     />
-                    <div className="flex mt-4">Enter your message below:</div>
+                    <div className="flex mt-4 text-base sm:text-lg">Enter your message below:</div>
                     <textarea
                         className="h-52 p-4 px-3 rounded-lg bg-[#E3D5CA] focus:bg-opacity-100 my-[1rem] borderBlack borderDevil focus:outline focus:outline-1 focus:outline-offset-0 focus:outline-[#c2afa1] transition-all duration-75"
                         name="message"

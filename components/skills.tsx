@@ -44,7 +44,7 @@ export default function Skills() {
                     quality="95"
                     priority={true}
                 />
-                <div className="text-black w-[90px] h-[51px] translate-x-[-35%] translate-y-[1rem] font-bold">{skillName}</div>
+                <div className="text-black/80 w-[90px] h-[51px] translate-x-[-35%] translate-y-[1rem] font-bold">{skillName}</div>
             </div>
         </motion.div>
     )
@@ -79,7 +79,7 @@ export default function Skills() {
                                 quality="95"
                                 priority={true}
                             />
-                            <div className="text-black w-[90px] h-[51px] translate-x-[-35%] translate-y-[0.5rem] font-bold">{skills[6].name}</div>
+                            <div className="text-black/80 w-[90px] h-[51px] translate-x-[-35%] translate-y-[0.5rem] font-bold">{skills[6].name}</div>
                         </div>
                     </motion.div>
 

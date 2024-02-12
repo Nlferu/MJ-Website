@@ -58,8 +58,8 @@ export default function Intro() {
                     </div>
                     <div className="flex gap-5">
                         <TfiWorld className="text-3xl text-[#c2afa1]" />{" "}
-                        <a className="underline text-lg" href="marta-jablonska.vercel.app">
-                            marta-jablonska.vercel.app
+                        <a className="underline text-lg" href="mj.vercel.app">
+                            mj.vercel.app
                         </a>
                     </div>
                 </motion.div>

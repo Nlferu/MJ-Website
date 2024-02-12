@@ -62,11 +62,11 @@ export const experienceData = [
 ] as const
 
 export const certificates = [
-    { title: "Kadry i płace od podstaw", issuer: "Tax Consilium Sp. z o.o.", date: "Issued: Apr 2019" },
-    { title: "Specjalista ds.Podatkowych: PIT, CIT, VAT, PCC", issuer: "Tax Consilium Sp. z o.o.", date: "Issued: Dec 2019" },
+    { title: "HR and payroll from scratch", issuer: "Tax Consilium Sp. z o.o.", date: "Issued: Apr 2019" },
+    { title: "Tax Specialist: PIT, CIT, VAT, PCC", issuer: "Tax Consilium Sp. z o.o.", date: "Issued: Dec 2019" },
     {
-        title: "Specjalista ds. rachunkowości (kod zawodu - 241103)",
-        issuer: "Stowarzyszenie Księgowych w Polsce Oddział Okręgowy w Katowicach",
+        title: "Accounting Specialist (profession code - 241103)",
+        issuer: "The Accountants Association in Poland",
         date: "Issued: XXX 2022",
     },
 ]

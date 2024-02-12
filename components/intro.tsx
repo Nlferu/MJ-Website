@@ -2,15 +2,10 @@
 
 import React, { useRef } from "react"
 import Image from "next/image"
-import { Cormorant_Garamond } from "next/font/google"
 import { BsTelephone, BsEnvelope } from "react-icons/bs"
 import { TfiWorld } from "react-icons/tfi"
 import { useSectionInView } from "@/lib/hooks"
 import { motion, useScroll, useTransform } from "framer-motion"
-
-// Icon font: Balgin
-// Website Font: Cormorant Garamond
-const cormorant = Cormorant_Garamond({ weight: "400", subsets: ["latin"] })
 
 export default function Intro() {
     const { ref } = useSectionInView("Home", 0.5)
@@ -19,7 +14,7 @@ export default function Intro() {
     const opacityProgess = useTransform(scrollYProgress, [1, 0.3], [1, 0])
 
     return (
-        <section className="max-w-[51rem] min-h-[100vh] text-center scroll-mt-[100rem] mt-10 sm:mt-0" ref={ref} id="home">
+        <section className="max-w-[53rem] min-h-[100vh] text-center scroll-mt-[100rem] mt-10 sm:mt-0" ref={ref} id="home">
             <motion.div
                 ref={reference}
                 style={{
@@ -47,18 +42,18 @@ export default function Intro() {
                 <div className={`text-5xl mb-[4rem]`}>Marta Jabłońska</div>
 
                 <motion.div
-                    className="flex flex-col sm:flex-row items-center justify-center gap-10 sm:gap-20"
+                    className="flex flex-col lg:flex-row items-center justify-center gap-10 sm:gap-20"
                     initial={{ opacity: 0, scale: 0 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.2, duration: 1 }}
                 >
                     <div className="flex gap-5 text-lg">
-                        <BsTelephone className="text-3xl text-[#c2afa1]" /> 666 666 666
+                        <BsTelephone className="text-3xl text-[#c2afa1]" /> +48 500 259 284
                     </div>
                     <div className="flex gap-5">
                         <BsEnvelope className="text-3xl text-[#c2afa1]" />{" "}
-                        <a className="underline text-lg" href="mailto:mailito@interia.pl">
-                            mailito@interia.pl
+                        <a className="underline text-lg" href="mailto:marta.jablonska@vp.pl">
+                            marta.jablonska@vp.pl
                         </a>
                     </div>
                     <div className="flex gap-5">

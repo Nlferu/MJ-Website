@@ -1,11 +1,11 @@
-# MJ Website:
+# MJ Website
 
-https://mj.vercel.app/
+Live: https://mj.vercel.app/
 
-## ???
+## About
 
-Lorem Ipsum
+Website made for one of my clients Marta.
 
 ### Technologies Used
 
-TypeScript, Tailwin, React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, Webflow, React Email & Resend, Vercel hosting and more...
+TypeScript, Tailwin, React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS, React Email & Resend, Vercel hosting and more...

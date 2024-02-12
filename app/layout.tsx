@@ -7,7 +7,7 @@ import type { Metadata } from "next"
 import { Petrona } from "next/font/google"
 import { Toaster } from "react-hot-toast"
 
-const petrona = Petrona({ subsets: ["latin"] })
+const petrona = Petrona({ subsets: ["latin"], weight: ["400"] })
 
 export const metadata: Metadata = {
     title: "Marta Jabłońska",

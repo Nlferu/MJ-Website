@@ -10,7 +10,7 @@ import { Toaster } from "react-hot-toast"
 const petrona = Petrona({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-    title: "Marta Jablonska",
+    title: "Marta Jabłońska",
     description: "Accounting Services",
 }
 

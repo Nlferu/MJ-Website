@@ -11,7 +11,7 @@ const petrona = Petrona({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
     title: "Marta Jabłońska",
-    description: "Accounting Services",
+    description: "Accountant",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

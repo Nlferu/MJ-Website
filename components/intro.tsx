@@ -31,7 +31,7 @@ export default function Intro() {
 
                     <Image
                         className="w-[14rem] sm:w-[20rem] h-[14rem] sm:h-[20rem] object-fit rounded-full mb-10 flex self-center justify-center"
-                        src="/icon.png"
+                        src="/logo.png"
                         alt="MJ"
                         height="400"
                         width="400"

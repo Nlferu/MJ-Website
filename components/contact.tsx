@@ -27,8 +27,8 @@ export default function Contact() {
             <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 2 }} viewport={{ once: true }}>
                 <p className="text-stone-900 text-base sm:text-lg text">
                     Please contact me directly at{" "}
-                    <a className="underline" href="mailto:mailito@interia.pl">
-                        mailito@interia.pl
+                    <a className="underline" href="mailto:marta.jablonska@vp.pl">
+                        marta.jablonska@vp.pl
                     </a>{" "}
                     or through this form.
                 </p>

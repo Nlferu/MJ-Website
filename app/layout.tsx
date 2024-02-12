@@ -4,10 +4,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import Mover from "@/components/mover"
 import type { Metadata } from "next"
-import { Petrona } from "next/font/google"
 import { Toaster } from "react-hot-toast"
-
-const petrona = Petrona({ subsets: ["latin"], weight: ["400"] })
 
 export const metadata: Metadata = {
     title: "Marta Jabłońska",
@@ -17,7 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" className="!scroll-smooth">
-            <body className={`${petrona.className} pt-28 sm:pt-36 bg-white`}>
+            <body className={`pt-28 sm:pt-36 bg-white`}>
                 <ActiveSectionContextProvider>
                     <Header />
                     {children}

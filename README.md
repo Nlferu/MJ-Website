@@ -1,6 +1,6 @@
 # MJ Website
 
-Live: https://mj.vercel.app/
+Live: https://marta-jablonska.vercel.app/
 
 ## About
 
